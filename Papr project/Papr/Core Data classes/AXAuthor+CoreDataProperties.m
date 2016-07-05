@@ -2,7 +2,7 @@
 //  AXAuthor+CoreDataProperties.m
 //  Papr
 //
-//  Created by Demitri Muna on 6/22/16.
+//  Created by Demitri Muna on 7/4/16.
 //  Copyright © 2016 Demitri Muna. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,6 +13,7 @@
 
 @implementation AXAuthor (CoreDataProperties)
 
+@dynamic index;
 @dynamic name;
 @dynamic entries;
 

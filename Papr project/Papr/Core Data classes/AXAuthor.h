@@ -2,12 +2,14 @@
 //  AXAuthor.h
 //  Papr
 //
-//  Created by Demitri Muna on 6/22/16.
+//  Created by Demitri Muna on 7/4/16.
 //  Copyright © 2016 Demitri Muna. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+
+@class AXEntry;
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -37,7 +37,7 @@
 	}
 	
 	for (AXEntry *entry in self.axManager.todaysAbstracts) {
-		NSLog(@"%@", entry.title);
+		//NSLog(@"%@", entry.title);
 	}
 
 	[self.view.layer setNeedsLayout];
@@ -84,9 +84,9 @@
 
 - (UIView *)cardContainerViewNextViewWithIndex:(NSInteger)index // view at index
 {
-	DLog(@"request view index: %ld", (long)index);
+	//DLog(@"request view index: %ld", (long)index);
 
-	NSLog(@"%@", NSStringFromCGRect(self.cardContainer.frame));
+	//NSLog(@"%@", NSStringFromCGRect(self.cardContainer.frame));
 	
 	AbstractCardViewController *cardController = [[AbstractCardViewController alloc] init];
 	//cardController.cardFrame = CGRectMake(0, 0, self.cardContainer.frame.size.width, self.cardContainer.frame.size.height);

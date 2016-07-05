@@ -18,8 +18,6 @@
 		A68509181D1B04A5006A7CDB /* YSLDraggableCardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = A68509161D1B04A5006A7CDB /* YSLDraggableCardContainer.m */; };
 		A685091B1D1B07BA006A7CDB /* PaprModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A68509191D1B07BA006A7CDB /* PaprModel.xcdatamodeld */; };
 		A68509431D1B19EB006A7CDB /* AXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A68509421D1B19EB006A7CDB /* AXManager.m */; };
-		A68509571D1B1C37006A7CDB /* AXAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = A685094C1D1B1C37006A7CDB /* AXAuthor.m */; };
-		A68509581D1B1C37006A7CDB /* AXAuthor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A685094E1D1B1C37006A7CDB /* AXAuthor+CoreDataProperties.m */; };
 		A68509591D1B1C37006A7CDB /* AXCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = A68509501D1B1C37006A7CDB /* AXCategory.m */; };
 		A685095A1D1B1C37006A7CDB /* AXCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A68509521D1B1C37006A7CDB /* AXCategory+CoreDataProperties.m */; };
 		A685095B1D1B1C37006A7CDB /* AXEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A68509541D1B1C37006A7CDB /* AXEntry.m */; };
@@ -29,6 +27,9 @@
 		A68509741D1B420E006A7CDB /* AbstractCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68509731D1B420E006A7CDB /* AbstractCardView.m */; };
 		A68509811D1B5F9E006A7CDB /* AbstractCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A685097F1D1B5F9E006A7CDB /* AbstractCardViewController.m */; };
 		A68509821D1B5F9E006A7CDB /* AbstractCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68509801D1B5F9E006A7CDB /* AbstractCardView.xib */; };
+		A6F67D7D1D2B51AF00A087C6 /* AXEntry+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F67D7A1D2B51AF00A087C6 /* AXEntry+CoreDataProperties.m */; };
+		A6F67D841D2B665B00A087C6 /* AXAuthor+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F67D811D2B665B00A087C6 /* AXAuthor+CoreDataProperties.m */; };
+		A6F67D851D2B665B00A087C6 /* AXAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F67D831D2B665B00A087C6 /* AXAuthor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +45,6 @@
 		A68508FD1D1AF0A5006A7CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68509001D1AF0A5006A7CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A68509021D1AF0A5006A7CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A68509091D1AF26C006A7CDB /* AXAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXAuthor.h; sourceTree = "<group>"; };
-		A685090A1D1AF26C006A7CDB /* AXAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXAuthor.m; sourceTree = "<group>"; };
-		A685090B1D1AF26C006A7CDB /* AXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXCategory.h; sourceTree = "<group>"; };
-		A685090C1D1AF26C006A7CDB /* AXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXCategory.m; sourceTree = "<group>"; };
-		A685090D1D1AF26C006A7CDB /* AXEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXEntry.h; sourceTree = "<group>"; };
-		A685090E1D1AF26C006A7CDB /* AXEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXEntry.m; sourceTree = "<group>"; };
 		A68509131D1B04A4006A7CDB /* YSLCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLCardView.h; sourceTree = "<group>"; };
 		A68509141D1B04A5006A7CDB /* YSLCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSLCardView.m; sourceTree = "<group>"; };
 		A68509151D1B04A5006A7CDB /* YSLDraggableCardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSLDraggableCardContainer.h; sourceTree = "<group>"; };
@@ -57,10 +52,6 @@
 		A685091A1D1B07BA006A7CDB /* PaprModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaprModel.xcdatamodel; sourceTree = "<group>"; };
 		A68509411D1B19EB006A7CDB /* AXManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXManager.h; sourceTree = "<group>"; };
 		A68509421D1B19EB006A7CDB /* AXManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXManager.m; sourceTree = "<group>"; };
-		A685094B1D1B1C37006A7CDB /* AXAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXAuthor.h; path = "Papr/Core Data classes/AXAuthor.h"; sourceTree = "<group>"; };
-		A685094C1D1B1C37006A7CDB /* AXAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXAuthor.m; path = "Papr/Core Data classes/AXAuthor.m"; sourceTree = "<group>"; };
-		A685094D1D1B1C37006A7CDB /* AXAuthor+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AXAuthor+CoreDataProperties.h"; path = "Papr/Core Data classes/AXAuthor+CoreDataProperties.h"; sourceTree = "<group>"; };
-		A685094E1D1B1C37006A7CDB /* AXAuthor+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AXAuthor+CoreDataProperties.m"; path = "Papr/Core Data classes/AXAuthor+CoreDataProperties.m"; sourceTree = "<group>"; };
 		A685094F1D1B1C37006A7CDB /* AXCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXCategory.h; path = "Papr/Core Data classes/AXCategory.h"; sourceTree = "<group>"; };
 		A68509501D1B1C37006A7CDB /* AXCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXCategory.m; path = "Papr/Core Data classes/AXCategory.m"; sourceTree = "<group>"; };
 		A68509511D1B1C37006A7CDB /* AXCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AXCategory+CoreDataProperties.h"; path = "Papr/Core Data classes/AXCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -78,6 +69,12 @@
 		A685097E1D1B5F9E006A7CDB /* AbstractCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractCardViewController.h; sourceTree = "<group>"; };
 		A685097F1D1B5F9E006A7CDB /* AbstractCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractCardViewController.m; sourceTree = "<group>"; };
 		A68509801D1B5F9E006A7CDB /* AbstractCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AbstractCardView.xib; sourceTree = "<group>"; };
+		A6F67D791D2B51AF00A087C6 /* AXEntry+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AXEntry+CoreDataProperties.h"; path = "Papr/Core Data classes/AXEntry+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A6F67D7A1D2B51AF00A087C6 /* AXEntry+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AXEntry+CoreDataProperties.m"; path = "Papr/Core Data classes/AXEntry+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A6F67D801D2B665B00A087C6 /* AXAuthor+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AXAuthor+CoreDataProperties.h"; path = "Papr/Core Data classes/AXAuthor+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A6F67D811D2B665B00A087C6 /* AXAuthor+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AXAuthor+CoreDataProperties.m"; path = "Papr/Core Data classes/AXAuthor+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A6F67D821D2B665B00A087C6 /* AXAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXAuthor.h; path = "Papr/Core Data classes/AXAuthor.h"; sourceTree = "<group>"; };
+		A6F67D831D2B665B00A087C6 /* AXAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXAuthor.m; path = "Papr/Core Data classes/AXAuthor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,12 +146,6 @@
 		A68509081D1AF26C006A7CDB /* arXiv classes */ = {
 			isa = PBXGroup;
 			children = (
-				A68509091D1AF26C006A7CDB /* AXAuthor.h */,
-				A685090A1D1AF26C006A7CDB /* AXAuthor.m */,
-				A685090B1D1AF26C006A7CDB /* AXCategory.h */,
-				A685090C1D1AF26C006A7CDB /* AXCategory.m */,
-				A685090D1D1AF26C006A7CDB /* AXEntry.h */,
-				A685090E1D1AF26C006A7CDB /* AXEntry.m */,
 			);
 			path = "arXiv classes";
 			sourceTree = "<group>";
@@ -174,16 +165,18 @@
 			isa = PBXGroup;
 			children = (
 				A68509191D1B07BA006A7CDB /* PaprModel.xcdatamodeld */,
-				A685094B1D1B1C37006A7CDB /* AXAuthor.h */,
-				A685094C1D1B1C37006A7CDB /* AXAuthor.m */,
-				A685094D1D1B1C37006A7CDB /* AXAuthor+CoreDataProperties.h */,
-				A685094E1D1B1C37006A7CDB /* AXAuthor+CoreDataProperties.m */,
+				A6F67D821D2B665B00A087C6 /* AXAuthor.h */,
+				A6F67D831D2B665B00A087C6 /* AXAuthor.m */,
+				A6F67D801D2B665B00A087C6 /* AXAuthor+CoreDataProperties.h */,
+				A6F67D811D2B665B00A087C6 /* AXAuthor+CoreDataProperties.m */,
 				A685094F1D1B1C37006A7CDB /* AXCategory.h */,
 				A68509501D1B1C37006A7CDB /* AXCategory.m */,
 				A68509511D1B1C37006A7CDB /* AXCategory+CoreDataProperties.h */,
 				A68509521D1B1C37006A7CDB /* AXCategory+CoreDataProperties.m */,
 				A68509531D1B1C37006A7CDB /* AXEntry.h */,
 				A68509541D1B1C37006A7CDB /* AXEntry.m */,
+				A6F67D791D2B51AF00A087C6 /* AXEntry+CoreDataProperties.h */,
+				A6F67D7A1D2B51AF00A087C6 /* AXEntry+CoreDataProperties.m */,
 			);
 			name = "Core Data classes";
 			path = ..;
@@ -248,6 +241,7 @@
 				TargetAttributes = {
 					A68508EA1D1AF0A5006A7CDB = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 467Z7YMNVP;
 					};
 				};
 			};
@@ -288,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68509571D1B1C37006A7CDB /* AXAuthor.m in Sources */,
+				A6F67D7D1D2B51AF00A087C6 /* AXEntry+CoreDataProperties.m in Sources */,
 				A685095F1D1B1C55006A7CDB /* CoreDataInterface.m in Sources */,
 				A68509431D1B19EB006A7CDB /* AXManager.m in Sources */,
 				A68508F91D1AF0A5006A7CDB /* SecondViewController.m in Sources */,
@@ -297,14 +291,15 @@
 				A68509811D1B5F9E006A7CDB /* AbstractCardViewController.m in Sources */,
 				A685095B1D1B1C37006A7CDB /* AXEntry.m in Sources */,
 				A68508F61D1AF0A5006A7CDB /* FirstViewController.m in Sources */,
+				A6F67D851D2B665B00A087C6 /* AXAuthor.m in Sources */,
 				A68509591D1B1C37006A7CDB /* AXCategory.m in Sources */,
 				A68509171D1B04A5006A7CDB /* YSLCardView.m in Sources */,
+				A6F67D841D2B665B00A087C6 /* AXAuthor+CoreDataProperties.m in Sources */,
 				A685096E1D1B3DCD006A7CDB /* XMLReader.m in Sources */,
 				A685095A1D1B1C37006A7CDB /* AXCategory+CoreDataProperties.m in Sources */,
 				A68509181D1B04A5006A7CDB /* YSLDraggableCardContainer.m in Sources */,
 				A68508F01D1AF0A5006A7CDB /* main.m in Sources */,
 				A68509741D1B420E006A7CDB /* AbstractCardView.m in Sources */,
-				A68509581D1B1C37006A7CDB /* AXAuthor+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +413,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Papr/Papr-prefix.pch";
 				INFOPLIST_FILE = Papr/Info.plist;
@@ -425,6 +422,7 @@
 				OTHER_CFLAGS = "-DDLOG_DEBUG=1";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demitri.Papr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -432,6 +430,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Papr/Papr-prefix.pch";
 				INFOPLIST_FILE = Papr/Info.plist;
@@ -439,6 +439,7 @@
 				OTHER_CFLAGS = "-DDLOG_DEBUG=1";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demitri.Papr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

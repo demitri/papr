@@ -123,14 +123,31 @@
 		
 		// process authors
 		//
-		NSArray *authors = [entry objectForKey:@"authors"];
-		for (NSDictionary *a in authors) {
-			AXAuthor *newAuthor = [NSEntityDescription insertNewObjectForEntityForName:@"AXAuthor"
-															  inManagedObjectContext:mom];
-			newAuthor.name = [[a objectForKey:@"name"] objectForKey:@"text"];
-			[newEntry addAuthorsObject:newAuthor];
-		}
 		
+		// If there is more than one author a dictonary is returned;
+		// otherwise it's a dictionary.
+		
+		NSArray *authors;
+		if ([[entry objectForKey:@"author"] isKindOfClass:NSArray.class])
+			authors = [entry objectForKey:@"author"];
+		else if ([[entry objectForKey:@"author"] isKindOfClass:NSDictionary.class])
+			authors = @[[entry objectForKey:@"author"]];
+
+//		NSLog(@"AUTHORS: %@", authors);
+
+		int authorIndex = 1;
+		for (NSDictionary *a in authors) {
+			
+			if ([a objectForKey:@"name"] && [[a objectForKey:@"name"] objectForKey:@"text"]) {
+				
+				AXAuthor *newAuthor = [NSEntityDescription insertNewObjectForEntityForName:@"AXAuthor"
+																	inManagedObjectContext:mom];
+				newAuthor.name = [[a objectForKey:@"name"] objectForKey:@"text"];
+				newAuthor.index = @(authorIndex++);
+				[newEntry addAuthorsObject:newAuthor];
+			}
+		}
+
 		// process category
 		//
 		// The API returns category as a dictionary if there is one record
@@ -182,7 +199,10 @@
 		
 		// process title
 		//
-		newEntry.title = [[entry objectForKey:@"title"] objectForKey:@"text"];
+		NSString *title = [[entry objectForKey:@"title"] objectForKey:@"text"];
+		title = [title stringByReplacingOccurrencesOfString:@"\n" withString:@" "];
+		title = [title stringByReplacingOccurrencesOfString:@"  " withString:@""];
+		newEntry.title = title;
 		
 		// process date updated
 		//

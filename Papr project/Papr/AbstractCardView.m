@@ -7,6 +7,7 @@
 //
 
 #import "AbstractCardView.h"
+#import "AXAuthor.h"
 
 @interface AbstractCardView ()
 - (void)_setup;
@@ -91,7 +92,7 @@
 		if ([keyPath isEqualToString:@"entry"]) {
 			self.abstractTitle.text = self.entry.title;
 			self.abstractSummary.text = self.entry.summary;
-			self.authorLabel.text = [[self.entry.authors anyObject] name];
+			self.authorLabel.text = self.entry.authorListString;
 		}
 	}
 }

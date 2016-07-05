@@ -2,7 +2,7 @@
 //  AXAuthor+CoreDataProperties.h
 //  Papr
 //
-//  Created by Demitri Muna on 6/22/16.
+//  Created by Demitri Muna on 7/4/16.
 //  Copyright © 2016 Demitri Muna. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,17 +15,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AXAuthor (CoreDataProperties)
 
+@property (nullable, nonatomic, retain) NSNumber *index;
 @property (nullable, nonatomic, retain) NSString *name;
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *entries;
+@property (nullable, nonatomic, retain) NSSet<AXEntry *> *entries;
 
 @end
 
 @interface AXAuthor (CoreDataGeneratedAccessors)
 
-- (void)addEntriesObject:(NSManagedObject *)value;
-- (void)removeEntriesObject:(NSManagedObject *)value;
-- (void)addEntries:(NSSet<NSManagedObject *> *)values;
-- (void)removeEntries:(NSSet<NSManagedObject *> *)values;
+- (void)addEntriesObject:(AXEntry *)value;
+- (void)removeEntriesObject:(AXEntry *)value;
+- (void)addEntries:(NSSet<AXEntry *> *)values;
+- (void)removeEntries:(NSSet<AXEntry *> *)values;
 
 @end
 

@@ -14,4 +14,20 @@
 
 // Insert code here to add functionality to your managed object subclass
 
+- (NSArray*)sortedAuthors
+{
+	NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"index" ascending:YES];
+	return [self.authors sortedArrayUsingDescriptors:@[sortDescriptor]];
+}
+
+- (NSString*)authorListString
+{
+	NSMutableArray *authorNames = [NSMutableArray array];
+	for (AXAuthor *author in self.sortedAuthors) {
+		[authorNames addObject:author.name];
+	}
+	
+	return [authorNames componentsJoinedByString:@", "];
+}
+
 @end
