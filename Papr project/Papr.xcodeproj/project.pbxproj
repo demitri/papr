@@ -418,9 +418,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Papr/Papr-prefix.pch";
 				INFOPLIST_FILE = Papr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DDLOG_DEBUG=1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demitri.Papr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paprapp.Papr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -435,9 +436,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Papr/Papr-prefix.pch";
 				INFOPLIST_FILE = Papr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DDLOG_DEBUG=1";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demitri.Papr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paprapp.Papr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
