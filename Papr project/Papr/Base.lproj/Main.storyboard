@@ -76,7 +76,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Info-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" sceneMemberID="viewController">
@@ -88,29 +88,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="WNf-Gm-3ly">
+                                <rect key="frame" x="29" y="32" width="191" height="51"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="UDe-Vo-LYH"/>
+                                    <constraint firstAttribute="width" constant="191" id="hff-3Y-Wsq"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdv-4a-fCg" userLabel="Card">
+                                <rect key="frame" x="40" y="91" width="520" height="386"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hZ-4g-hRl">
+                                        <rect key="frame" x="8" y="46" width="504" height="340"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">Are you an astronomer? Do you struggle keeping up to date with the arXiv? We do too!
+So, at a hack day at dotAstronomy 8 we created the perfect app for us and for you. Each you are presented with a list of the day’s new papers: simply swipe right to save or left to toss. When you’re done, your phone will email you your saved papers for a closer read.
+
+Email us at SOME@EMAIL.ADDRESS
+
+This app was created by &lt;a href="http://twitter.com/annakweigel"&gt;Anna Weigel&lt;/a&gt;, &lt;a href="http://twitter.com/demitrimuna"&gt; Demitri Muna &lt;/a&gt;, Joshua Warren and &lt;a href="http://twitter.com/sam_astrophys"&gt; Sam Vaughan &lt;/a&gt;.
+
+The icons used here were made by Pham Thi Diau Linh, Anton Anuchin, Jennifer Cozzette, Vincent De Coen and the Web Icon Set, all from &lt;a href="https://thenounproject.com"&gt;The Noun Project&lt;/a&gt;.</mutableString>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact &amp; Info" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1T-JL-65O">
+                                        <rect key="frame" x="8" y="8" width="191" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="eXc-bT-Iyk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstItem="G1T-JL-65O" firstAttribute="top" secondItem="pdv-4a-fCg" secondAttribute="top" constant="8" id="919-4D-dCo"/>
+                                    <constraint firstItem="8hZ-4g-hRl" firstAttribute="top" secondItem="G1T-JL-65O" secondAttribute="bottom" constant="-13" id="Kpj-PR-ync"/>
+                                    <constraint firstAttribute="trailing" secondItem="8hZ-4g-hRl" secondAttribute="trailing" constant="8" id="Z3I-tM-KV2"/>
+                                    <constraint firstItem="8hZ-4g-hRl" firstAttribute="leading" secondItem="pdv-4a-fCg" secondAttribute="leading" constant="8" id="Zde-UQ-P3h"/>
+                                    <constraint firstItem="8hZ-4g-hRl" firstAttribute="centerX" secondItem="pdv-4a-fCg" secondAttribute="centerX" id="ixW-4l-nCd"/>
+                                    <constraint firstAttribute="width" constant="520" id="qqN-Iv-hEV"/>
+                                    <constraint firstAttribute="bottom" secondItem="8hZ-4g-hRl" secondAttribute="bottom" id="sBw-md-vxi"/>
+                                    <constraint firstItem="G1T-JL-65O" firstAttribute="leading" secondItem="pdv-4a-fCg" secondAttribute="leading" constant="8" id="tNj-us-0TP"/>
+                                    <constraint firstItem="8hZ-4g-hRl" firstAttribute="top" secondItem="G1T-JL-65O" secondAttribute="bottom" constant="8" id="vBR-QM-Awg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Kpj-PR-ync"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot_astro" translatesAutoresizingMaskIntoConstraints="NO" id="Nj8-yw-PaN">
+                                <rect key="frame" x="200" y="463" width="200" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4yj-t3-w5W"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.72156862745098038" green="0.78823529411764703" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="Nj8-yw-PaN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8hZ-4g-hRl" secondAttribute="bottom" constant="-14" id="DR5-eI-SIX"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="pdv-4a-fCg" secondAttribute="trailing" constant="20" id="E1k-5R-3l0"/>
+                            <constraint firstItem="WNf-Gm-3ly" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="12" id="OA1-XL-JHk"/>
+                            <constraint firstItem="WNf-Gm-3ly" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="9" id="QuC-dV-iMp"/>
+                            <constraint firstItem="Nj8-yw-PaN" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Ruq-lU-N3q"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="pdv-4a-fCg" secondAttribute="bottom" constant="74" id="S1c-zn-vv6"/>
+                            <constraint firstItem="pdv-4a-fCg" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="71" id="cBk-yw-knn"/>
+                            <constraint firstItem="pdv-4a-fCg" firstAttribute="centerX" secondItem="Nj8-yw-PaN" secondAttribute="centerX" id="dBA-Y2-Ir9"/>
+                            <constraint firstItem="pdv-4a-fCg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="20" id="gB0-do-O5a"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Nj8-yw-PaN" secondAttribute="bottom" constant="8" id="qSk-bU-TST"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info_icon" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,8 +195,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dot_astro" width="330" height="80"/>
         <image name="first" width="36" height="25"/>
-        <image name="second" width="30" height="30"/>
+        <image name="info_icon" width="28" height="28"/>
         <image name="send_mail" width="1822" height="1190"/>
         <image name="slogan" width="915" height="306"/>
         <image name="start_over" width="642" height="606"/>

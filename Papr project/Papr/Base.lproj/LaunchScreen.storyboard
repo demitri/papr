@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +18,39 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="o2H-j8-s9G">
+                                <rect key="frame" x="132" y="110" width="337" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="TaI-85-hqQ"/>
+                                    <constraint firstAttribute="height" constant="200" id="mNp-h1-2cl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot_astro" translatesAutoresizingMaskIntoConstraints="NO" id="LbR-Wz-a0Q">
+                                <rect key="frame" x="405" y="530" width="165" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LbR-Wz-a0Q" secondAttribute="height" multiplier="33:8" id="6ND-iC-DLd"/>
+                                    <constraint firstAttribute="height" constant="40" id="9GI-OX-UXj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUH-He-40H">
+                                <rect key="frame" x="174" y="443" width="253" height="41"/>
+                                <string key="text">by
+Anna Weigel and Demitri Muna</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.24749221613532618" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72156862745098038" green="0.78823529411764703" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nUH-He-40H" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GpX-qe-w72"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LbR-Wz-a0Q" secondAttribute="trailing" constant="10" id="Gwe-s3-DrY"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="LbR-Wz-a0Q" secondAttribute="bottom" constant="30" id="cAY-6F-s5H"/>
+                            <constraint firstItem="o2H-j8-s9G" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gGE-gX-hPT"/>
+                            <constraint firstItem="o2H-j8-s9G" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="90" id="ok2-1n-nFd"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nUH-He-40H" secondAttribute="bottom" constant="116" id="swN-eX-dqa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +58,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dot_astro" width="330" height="80"/>
+        <image name="slogan" width="915" height="306"/>
+    </resources>
 </document>
