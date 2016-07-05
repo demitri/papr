@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - papr-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="View Controller - papr" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b62-pY-Hpd" userLabel="Card">
+                                <rect key="frame" x="20" y="98" width="374" height="540"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tF-n5-vZX">
+                                        <rect key="frame" x="8" y="87" width="358" height="40"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="18" name="Avenir-Book"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSI-Mn-E23">
+                                        <rect key="frame" x="8" y="8" width="357" height="71"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NX6-su-tJt">
+                                        <rect key="frame" x="8" y="135" width="358" height="306"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4S-C7-rMU" userLabel="send_mail">
+                                <rect key="frame" x="314" y="28" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Afu-F9-vWY"/>
+                                    <constraint firstAttribute="height" constant="60" id="zuJ-YI-JKJ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="send_mail"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJY-cV-Z0T" userLabel="start_over">
+                                <rect key="frame" x="246" y="28" width="60" height="60"/>
+                                <state key="normal" title="Button" image="start_over"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="9PB-U9-VLz">
+                                <rect key="frame" x="20" y="28" width="191" height="51"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="HOD-B1-ucU"/>
+                                    <constraint firstAttribute="width" constant="191" id="bfq-Ym-AJ1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7686274509803922" green="0.82745098039215681" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MJY-cV-Z0T" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-15" id="Hui-AP-pMh"/>
+                            <constraint firstItem="MJY-cV-Z0T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="206" id="KgG-e0-mGW"/>
+                            <constraint firstItem="W4S-C7-rMU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-15" id="a4D-md-qpk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W4S-C7-rMU" secondAttribute="trailing" constant="20" id="aDs-CA-o6e"/>
+                            <constraint firstItem="W4S-C7-rMU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="274" id="hQx-nm-EcZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MJY-cV-Z0T" secondAttribute="trailing" constant="108" id="pc4-y9-myW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-43"/>
+        </scene>
+        <!--View Controller - about-->
+        <scene sceneID="AUu-H1-ibV">
+            <objects>
+                <viewController id="O8g-ha-OZ6" userLabel="View Controller - about" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nws-ra-EQz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zzo-ti-1EM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="neM-3X-Kre">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFS-jr-ETR" userLabel="Card">
+                                <rect key="frame" x="20" y="89" width="374" height="495"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact &amp; Info" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsD-zQ-Dk1">
+                                        <rect key="frame" x="8" y="8" width="357" height="71"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jTY-4w-Uxn">
+                                        <rect key="frame" x="8" y="66" width="358" height="429"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Are you an astronomer? Do you struggle keeping up to date with the arXiv? We do too!
+So, at a hack day at dotAstronomy 8 we created the perfect app for us and for you. Everyday you are presented with a list of the day's new papers: simply swipe right to save or left to toss. When you're done, your phone will email you your saved papers for a closer read. 
+
+Email us at SOME@EMAIL.ADDRESS
+
+This app was created by &lt;a href="http://twitter.com/annakweigel"&gt;Anna Weigel&lt;/a&gt;, &lt;a href="http://twitter.com/demitrimuna"&gt; Demitri Muna &lt;/a&gt;, Joshua Warren and &lt;a href="http://twitter.com/sam_astrophys"&gt; Sam Vaughan &lt;/a&gt;.
+
+The icons used here were made by Pham Thi Diau Linh, Anton Anuchin, Jennifer Cozzette, Vincent De Coen and the Web Icon Set, all from &lt;a href="https://thenounproject.com"&gt;The Noun Project&lt;/a&gt;.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dot_astro" translatesAutoresizingMaskIntoConstraints="NO" id="Jdf-0d-W1B">
+                                <rect key="frame" x="105" y="592" width="204" height="106"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="MwJ-4Y-KTJ">
+                                <rect key="frame" x="20" y="20" width="191" height="51"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="2rc-aK-ZWW"/>
+                                    <constraint firstAttribute="width" constant="191" id="bfT-uA-4st"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76992196280000003" green="0.82949082210000002" blue="0.91116492839999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jdf-0d-W1B" secondAttribute="trailing" constant="67" id="2RQ-QY-FLQ"/>
+                            <constraint firstItem="Jdf-0d-W1B" firstAttribute="leading" secondItem="neM-3X-Kre" secondAttribute="leadingMargin" constant="67" id="VFg-ti-Z54"/>
+                            <constraint firstItem="Zzo-ti-1EM" firstAttribute="top" secondItem="Jdf-0d-W1B" secondAttribute="bottom" constant="91" id="ySf-Yo-ti3"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGP-jJ-uHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="583" y="-43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dot_astro" width="330" height="80"/>
+        <image name="send_mail" width="1822" height="1190"/>
+        <image name="slogan" width="915" height="306"/>
+        <image name="start_over" width="642" height="606"/>
+    </resources>
+</document>

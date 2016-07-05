@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="AXAuthor" representedClassName="AXAuthor" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 16" minValueString="1" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="entries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AXEntry" inverseName="authors" inverseEntity="AXEntry" syncable="YES"/>
+    </entity>
+    <entity name="AXCategory" representedClassName="AXCategory" syncable="YES">
+        <attribute name="label" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="entries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AXEntry" inverseName="categories" inverseEntity="AXEntry" syncable="YES"/>
+    </entity>
+    <entity name="AXEntry" representedClassName="AXEntry" syncable="YES">
+        <attribute name="abstractLink" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <attribute name="archiveID" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="datePublished" optional="YES" attributeType="Date" valueTransformerName="" indexed="YES" syncable="YES"/>
+        <attribute name="dateUpdated" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="doiLink" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <attribute name="pdfLink" optional="YES" attributeType="Transformable" valueTransformerName="" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" indexed="YES" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AXAuthor" inverseName="entries" inverseEntity="AXAuthor" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AXCategory" inverseName="entries" inverseEntity="AXCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AXAuthor" positionX="-1323" positionY="2376" width="128" height="88"/>
+        <element name="AXCategory" positionX="-1701" positionY="2421" width="128" height="73"/>
+        <element name="AXEntry" positionX="-1487" positionY="2429" width="128" height="208"/>
+    </elements>
+</model>
